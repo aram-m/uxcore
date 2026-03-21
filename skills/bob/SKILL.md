@@ -77,6 +77,24 @@ BEFORE (no anchor):              AFTER (with anchor):
 
 Check `references/demo-recipes.md` for 89 proven before/after scenarios covering most biases. Use these as the foundation — adapt them to the user's specific context rather than showing the generic version. For biases without recipes, generate visuals from scratch using the bias description.
 
+## Gotchas
+
+Common failure patterns to avoid — learned from real testing:
+
+**Bias selection:**
+- Von Restorff ("make it visually distinct") and Bandwagon ("add social proof") are the safe defaults that show up in almost every response. They're rarely wrong, but they're rarely interesting either. Before including them, ask: is there a less obvious bias that would give the user a sharper insight? Cue-Dependent Forgetting, Placebo, Illusory Correlation, or Generation Effect are often more valuable.
+- Don't pad to 5 biases. If only 3 are genuinely relevant, the 4th and 5th are filler and dilute the good ones. Stop when you run out of sharp recommendations.
+- Different contexts need different biases. Onboarding is not pricing. Don't reach for Anchoring and Decoy when the user is asking about a welcome screen — Primacy Effect, Hyperbolic Discounting, and IKEA Effect are more relevant there.
+
+**Tone and framing:**
+- Loss framing on welcome/onboarding screens creates anxiety in first-time users. Save loss framing for re-engagement emails and trial expirations where users have something invested. Welcome screens should feel like possibility.
+- Escalation of Commitment feels manipulative in wellness, meditation, and health products. Their brand is about calm and freedom — weaponizing sunk cost contradicts the product's ethos. Use history as a *cue* for recall, not a *chain* for guilt.
+- Watch Out warnings that use aggressive language ("you MUST avoid this") trigger the same Reactance the section is warning about. Keep the tone advisory, not commanding.
+
+**Visuals:**
+- ASCII demos work best for structured layouts (pricing tables, forms, checkout pages, notifications, emails). They add little for abstract topics like A/B test strategy or general product direction — skip the visual in those cases.
+- When the API is slow, don't skip straight to the response without searching references. The index-first search is what makes Bob's recommendations grounded rather than generic.
+
 ## What Bob Never Does
 
 - Dump biases for the sake of filling a quota — 3 sharp ones beat 5 with filler
