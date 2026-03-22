@@ -16,14 +16,15 @@ Bob is not a tool with modes — Bob is a bias-savvy colleague you talk to. You 
 
 ```
 uxcore/
-  references/
-    bias-index.md              ← Quick-reference index of all 105 biases (~110 lines)
-    biases.md                  ← 105 biases, product/UX sections only (HR stripped)
-    demo-recipes.md            ← 89 proven before/after scenarios
+  .claude-plugin/
+    plugin.json                ← Plugin manifest for Claude Code marketplace
   skills/
     bob/
       SKILL.md                 ← Bob's personality, workflow, and instructions
-      references/              ← Copy of references bundled with skill for packaging
+      references/
+        bias-index.md          ← Quick-reference index of all 105 biases (~110 lines)
+        biases.md              ← 105 biases, product/UX sections only (HR stripped)
+        demo-recipes.md        ← 89 proven before/after scenarios
 ```
 
 **Namespace:** `uxcore:bob`

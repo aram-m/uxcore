@@ -1,0 +1,8 @@
+{
+  "name": "uxcore",
+  "version": "1.0.0",
+  "description": "Bob — cognitive bias advisor for product and UX decisions. 105 biases from uxcore.io with concrete actions, visual demos, and risk warnings.",
+  "author": {
+    "name": "Aram Muradyan"
+  }
+}
