@@ -22,6 +22,8 @@ uxcore/
     bob/
       SKILL.md                 ← Bob's personality, workflow, and instructions
       references/
+        question-index.md      ← Index of 63 curated product questions (~70 lines)
+        questions.md           ← Full question entries with pre-mapped biases and answers
         bias-index.md          ← Quick-reference index of all 105 biases (~110 lines)
         biases.md              ← 105 biases, product/UX sections only (HR stripped)
         demo-recipes.md        ← 89 proven before/after scenarios
@@ -40,8 +42,11 @@ uxcore/
 
 ### How Bob Works
 
-1. **Read context** — User shares what they're working on (UI code, mockup description, copy draft, pricing structure, product goal)
-2. **Search references** — Read `bias-index.md` to scan all 105 biases, pick the most relevant ones, then grep `biases.md` by number for full details. Check `demo-recipes.md` for before/after scenarios.
+1. **Read context** — User shares what they're working on (UI code, mockup description, copy draft, pricing structure, product goal) or the problem they're facing
+2. **Search references** — Choose the right search path:
+   - **Problem-first** (user describes a problem or asks "why"): scan `question-index.md` → match to closest question → grep `questions.md` for curated answers with pre-mapped biases → supplement with `biases.md`
+   - **Bias-first** (user is building something specific): read `bias-index.md` → pick relevant biases → grep `biases.md` by number
+   - Either path: check `demo-recipes.md` for before/after scenarios
 3. **Deliver a bias brief** — Max 5 biases, often 3 is plenty. Quality over quantity — every bias must earn its spot with a concrete action.
 4. **Show, don't just tell** — Render visual demos when they'd make the bias tangible (ASCII in CLI, HTML/CSS in chat)
 5. **Watch out** — 1-2 biases to be careful about in this context
@@ -115,20 +120,40 @@ Three-level loading:
 2. **SKILL.md body** (<5k words) — Personality, workflow, output format, rules. Loaded when skill triggers.
 3. **References** (on demand) — Searched via index-first approach, never auto-loaded.
 
-### Index-First Search Strategy
+### Search Strategy
 
-Instead of broad keyword grep sprays:
+Two search paths, both using index-first approach to keep token usage lean:
 
+**Problem-first path** (user describes a problem or asks "why"):
+1. **Scan question index** — `question-index.md` lists 63 curated product questions with keywords (~70 lines). Match user's problem to closest question(s).
+2. **Pull curated answers** — Grep `questions.md` by question number. Gets pre-mapped biases with contextual explanations.
+3. **Supplement** — Check `bias-index.md` for angles the curated answers missed.
+
+**Bias-first path** (user is building something specific):
 1. **Read the index** — `bias-index.md` lists all 105 biases with 1-line descriptions (~110 lines). Scan to identify relevant biases.
 2. **Targeted lookup** — Grep `biases.md` by specific bias number (e.g., `grep -A 20 "## 18. Anchoring"`). 3-5 targeted greps instead of 10+ broad ones.
+
+**Both paths:**
 3. **Check recipes** — Search `demo-recipes.md` for matching before/after scenarios.
 
-This approach cut token usage by ~41% compared to broad keyword searches.
+The index-first approach cut token usage by ~41% compared to broad keyword searches.
 
 ## Reference Files
 
+### `question-index.md`
+Index of 63 curated product questions with keywords. One line per question with number, title, and keyword tags. Bob reads this first when the user describes a problem to find the closest match.
+
+### `questions.md`
+Full question entries from the [uxcg-advisor dataset](https://github.com/aram-m/uxcg-advisor). Each entry includes:
+- Question title
+- Pre-mapped bias numbers (matching `bias-index.md`)
+- Contextual answers explaining *why* each bias applies to that specific problem
+- Related question cross-references
+
+Source: `uxcg-dataset.json` (questions + metadata) and `uxcg-answers.json` (contextual answers) with `{{N}}` bias references resolved to bias names.
+
 ### `bias-index.md`
-Quick-reference index of all 105 biases. One line per bias with number, name, and product/UX summary. Bob reads this first to pick relevant biases.
+Quick-reference index of all 105 biases. One line per bias with number, name, and product/UX summary. Bob reads this first when the user is building something specific.
 
 ### `biases.md`
 Derived from `uxcore-biases-en.md` (105 biases). Transformations:
