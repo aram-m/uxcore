@@ -1,4 +1,4 @@
-# UX Core: Question Index (63 Questions)
+# UX CORE (UXC): Question Index (63 Questions)
 
 Quick-reference lookup. Read this first to match user problems to curated bias recommendations, then grep `questions.md` by number for full answers.
 

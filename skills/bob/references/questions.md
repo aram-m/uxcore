@@ -1,9 +1,9 @@
-# UX Core: Curated Questions & Answers
+# UX CORE (UXC): Curated Questions & Answers
 
 63 real-world product questions mapped to cognitive biases with contextual explanations.
 Each answer explains *why* specific biases apply to the situation.
 
-Source: uxcg-advisor dataset from uxcore.io by Wolf Alexanyan / KeepSimple.
+Source: uxcg-advisor dataset from UX CORE (uxcore.io) by Wolf Alexanyan / KeepSimple.
 
 ## 1. Why our company has reputation issue?
 

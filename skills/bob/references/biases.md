@@ -1,4 +1,4 @@
-# UX Core: 105 Cognitive Biases & Behavioral Patterns
+# UX CORE (UXC): 105 Cognitive Biases & Behavioral Patterns
 
 Source: https://keepsimple.io/uxcore by Wolf Alexanyan / KeepSimple
 

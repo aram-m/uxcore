@@ -1,4 +1,4 @@
-# UX Core: Bias Index (105 Biases)
+# UX CORE (UXC): Bias Index (105 Biases)
 
 Quick-reference lookup. Read this first to identify relevant biases, then grep `biases.md` by number for full details.
 

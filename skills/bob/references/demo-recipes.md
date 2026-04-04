@@ -1,4 +1,4 @@
-# UX Core: Demo Recipes — Proven Before/After Scenarios
+# UX CORE (UXC): Demo Recipes — Proven Before/After Scenarios
 
 Source: https://keepsimple.io/uxcore by Wolf Alexanyan / KeepSimple
 Extracted from ux-core app bias demo configurations, expanded with additional scenarios.
