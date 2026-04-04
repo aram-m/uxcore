@@ -1,6 +1,6 @@
 # UX Core — Bob
 
-A Claude plugin that surfaces relevant cognitive biases when you're building user-facing products. Powered by 105 biases and 63 curated product questions from [uxcore.io](https://keepsimple.io/uxcore) by Wolf Alexanyan / KeepSimple.
+A Claude plugin that surfaces relevant cognitive biases when you're building user-facing products. Powered by 105 biases and 63 curated product questions from [uxcore.io](https://keepsimple.io/uxcore) by [Wolf Alexanyan](https://am.linkedin.com/in/alexanyan) / KeepSimple.
 
 ## What it does
 
@@ -67,7 +67,7 @@ Bob matches this to a curated question, pulls pre-mapped biases (Curse of Knowle
 
 ## Credits
 
-Biases and question dataset sourced from [UX Core](https://keepsimple.io/uxcore) by Wolf Alexanyan / KeepSimple.
+Biases and question dataset sourced from [UX Core](https://keepsimple.io/uxcore) by [Wolf Alexanyan](https://am.linkedin.com/in/alexanyan) / KeepSimple.
 
 ## License
 
