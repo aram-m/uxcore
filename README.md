@@ -12,6 +12,11 @@ Bob works two ways:
 
 ## Install
 
+**Skills.sh (recommended):**
+```bash
+npx skills add aram-m/uxcore
+```
+
 **Claude Code (CLI):**
 ```bash
 claude plugin marketplace add github:aram-m/uxcore
@@ -62,4 +67,8 @@ Bob matches this to a curated question, pulls pre-mapped biases (Curse of Knowle
 
 ## Credits
 
-Biases sourced from [UX Core](https://keepsimple.io/uxcore) by Wolf Alexanyan / KeepSimple.
+Biases and question dataset sourced from [UX Core](https://keepsimple.io/uxcore) by Wolf Alexanyan / KeepSimple.
+
+## License
+
+MIT
