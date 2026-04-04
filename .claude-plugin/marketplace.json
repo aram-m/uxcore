@@ -9,8 +9,8 @@
   "plugins": [
     {
       "name": "uxcore",
-      "description": "Bob — cognitive bias advisor for product and UX decisions. 105 biases from uxcore.io with concrete actions, visual demos, and risk warnings.",
-      "version": "1.0.0",
+      "description": "Bob — cognitive bias advisor for product and UX decisions. 105 biases and 63 curated product questions from uxcore.io with concrete actions, visual demos, and risk warnings.",
+      "version": "1.1.0",
       "source": "./",
       "author": {
         "name": "Aram Muradyan"
