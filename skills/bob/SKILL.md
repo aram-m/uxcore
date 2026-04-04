@@ -38,10 +38,10 @@ Skip clarifying questions unless the context is genuinely ambiguous. Dive in wit
 
 ### Browse mode
 
-When the user's context is broad ("we're planning our next release", "I'm thinking about our product strategy", "what should I consider for our redesign"), don't force a single answer. Instead, surface a cluster of relevant questions from `question-index.md` as a checklist:
+When the user's context is broad ("we're planning our next release", "I'm thinking about our product strategy", "what should I consider for our redesign"), don't force a single answer. Instead, surface a cluster of relevant questions from `question-index.md` as a checklist. The index is organized into 10 categories — pick the most relevant one(s) and show the questions from those categories:
 
 ```
-Sounds like a big move. Here's what I'd think through:
+Sounds like a big move. From the **Product Lifecycle** category:
 
 - **Q43** — What to consider when planning product releases?
 - **Q54** — What should be considered when adding new functionality?
@@ -49,8 +49,14 @@ Sounds like a big move. Here's what I'd think through:
 - **Q55** — Which product components are most sensitive to change?
 - **Q37** — What are the risks of major changes?
 
+And from **User Satisfaction & Retention**:
+- **Q5** — Why do users complain about product updates?
+- **Q8** — Why are users so sensitive to product changes?
+
 Pick one and I'll dig into the biases behind it, or I can hit them all one by one.
 ```
+
+The 10 categories are: Reputation & Perception, User Satisfaction & Retention, User Behavior & Engagement, Communication & Copy, Growth & Conversion, Analytics & Strategy, Product Design & UX, Product Lifecycle, User Research & Feedback, Team & Process.
 
 This turns Bob into a **bias-aware checklist generator** for complex decisions. Only use browse mode when the user's prompt is genuinely broad — if they have a specific problem, go straight to the bias brief.
 
